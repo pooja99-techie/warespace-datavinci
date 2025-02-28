@@ -1,0 +1,373 @@
+
+html body{
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+.contact {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds spacing between icon and text */
+}
+
+.call-icon {
+    width: 20px;  /* Adjust the size */
+    height: 20px;
+}
+
+.menu-icon .contact {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: justify;
+}
+
+.navbar .book-tour {
+    background-color: #008000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar .menu-icon {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+    gap: 60px;
+}
+
+/* Background Section */
+.hero {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    padding: 48px 72px;
+    border-radius: 10px;
+}
+
+.main-section {
+    width: 80%;
+    height: auto; /* Adjust height dynamically */
+    background-color: rgba(230, 244, 235, 1);
+    padding: 48px 72px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Left Side Styling */
+.left-side {
+    width: 60%;
+    padding: 0px;
+    width: Fixed(582px);
+    height: Hug(596px);
+    gap: 36px;
+}
+
+.rating {
+    font-size: 18px;
+    color: #f4b400; /* Gold color for stars */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating img{
+    width: 15px;
+    height: 15px;
+}
+
+.rating small {
+    font-size: 14px;
+    color: #555;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}
+
+h2 span {
+    color: rgba(0, 170, 108, 1); /* Green text for location */
+}
+
+.features {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.icon img {
+    width: 40px; /* Adjusted icon width */
+    height: 40px; /* Adjusted icon height */
+    object-fit: contain; /* Ensures proper aspect ratio */
+}
+
+.list {
+    font-size: 16px;
+    color: #333;
+    text-align: left; /* Aligns text properly */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list b {
+    font-size: 18px;
+    color: #222;
+    display: block;
+    margin-bottom: 4px; /* Adds space between heading and subheading */
+}
+
+small {
+    color: #777;
+    font-size: 14px;
+    display: block;
+    line-height: 1.4; /* Increases readability */
+}
+
+
+.images {
+    display: flex;
+    gap: 12px;  /* Ensures consistent spacing */
+    justify-content: space-between; /* Distributes images evenly */
+    max-width: 95%;
+    margin-top: 10px;
+}
+
+.images img {
+    width: calc(25% - 9px); /* Ensures equal width for 4 images with 12px gap */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.price {
+    font-size: 18px;
+    color: rgba(0, 170, 108, 1);
+    font-weight: bold;
+    margin-top: ;
+    width: 100%;
+    margin-top: 15px;
+}
+.text-section {
+    width: 100%;
+}
+
+.right-side {
+    width: 486px;
+    height: 632.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+/* Form Section */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container h3 {
+    margin: 5px 3px;
+    font-family: Poppins;
+    font-size: 29px;
+}
+
+.form-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.form-container button {
+    background: rgba(0, 170, 108, 1);
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
+
+.form-container button .arrow-icon {
+    width: 16px;  
+    height: 16px;
+}
+
+
+.questions {
+    text-align: left; 
+    font-size: 16px;
+    color: #223;
+    margin-top: 10px;
+}
+
+.questions a {
+    color: green; 
+    font-weight: bold;
+    text-decoration: none; /* Removes underline */
+}
+
+.questions a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+.job-link {
+    background-color: #d4edda;
+    padding: 10px 18px;
+    border-radius: 20px; /* Rounded corners */
+    text-align: left; /* Aligns text inside the box */
+    font-size: 16px;
+    margin-top: 15px;
+    display: block; /* Ensures it takes full width */
+    width: fit-content; /* Adjusts width to content */
+}
+
+.job-link a{
+    color: rgba(16, 36, 66, 1);
+    text-decoration: underline;
+}
+
+/* Default placeholder style */
+#phoneInput::placeholder {
+    font-style: italic; /* Only this placeholder will be italic */
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between images and text */
+}
+
+.profile-images {
+    display: flex;
+    position: relative;
+}
+
+.profile-images img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 50%; /* Make images circular */
+    object-fit: cover;
+    border: 2px solid white; /* Optional: Adds a white border for clarity */
+}
+
+.profile-images img:nth-child(2) {
+    position: absolute;
+    left: 30px; 
+    z-index: 1; 
+}
+
+.profile-section p {
+    font-size: 16px;
+    text-align: justify;
+    color: #223;
+    max-width: 350px; /* Adjust text wrapping */
+    margin-left: 25px; /* Add spacing to avoid overlap with images */
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar .contact, .navbar .book-tour {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 200px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    .menu .book-tour {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Space Listing</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo"><img src="warespace-logo.jpg" alt="warespace-logo"></div>
+        </div>
+        <div class="header-right">
+            <div class="contact">
+                <img src="call.png" alt="Contact Icon">
+                <span>470-518-5965</span>
+            </div>
+            <div class="menu-icon">☰</div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <img src="background-image.jpg" class="active" alt="Warehouse Image 4">
+                <img src="warehouse 2.webp" alt="Warehouse Image 2">
+                <img src="warehouse 3.png" alt="Warehouse Image 3">
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="thumbnails">
+                <img src="warehouse 1.png" onclick="changeSlide(0)" alt="Thumbnail 1">
+                <img src="warehouse 2.webp" onclick="changeSlide(1)" alt="Thumbnail 2">
+                <img src="warehouse 3.png" onclick="changeSlide(2)" alt="Thumbnail 3">
+            </div>
+        </section>
+        <section class="details">
+            <div class="upper-part">
+                <div class="rating">
+                    <img src="google-con.jpg" alt="Google Icon"><span>★★★★☆</span> <small>(4.8/5.0)</small>
+                </div>
+                <h2>Small warehouse space for rent in <span class="highlight">Upper West Side, Atlanta, GA</span></h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="calendar.png" alt="Icon">
+                        </div>
+                        <div class="list">
+                            <b>Flexible spaces & leases</b>
+                            <small>Leases as short as 6 months. Upscale or downscale anytime!</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="trolley.png" alt="Icon">
+                        </div>
+                        <div class="list">
+                            <b>All-inclusive warehousing</b>
+                            <small>Rental includes racking, equipment, loading docks & more.</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="key-chain.png" alt="Icon">
+                        </div>
+                        <div class="list">
+                            <b>Immediate availability</b>
+                            <small>Move in today!</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button1">
+                    <button type="submit">
+                        Ask about a space
+                        <img src="right-arrow.png" alt="Arrow" class="arrow-icon">
+                    </button>
+                </div>
+                
+                <div class="price">200 - 2,000 sq ft starting as low as $625/month</div>
+            </div>
+            <div class="lower-part">
+                <div class="form-container">
+                    <h3>Visit for an in-person tour</h3>
+                    <div class="profile-section">
+                        <div class="profile-images">
+                            <img src="profile1.jpg" alt="Cashana">
+                            <img src="profile2.jpg" alt="Khadijah">
+                        </div>
+                        <p>Cashana or Khadijah will answer your questions and find you a space that meets your needs. <i>No commitment necessary!</i></p>
+                    </div>
+                    
+                    
+                    <form>
+                        <input type="text" placeholder="First name here" required>
+                        <input type="text" placeholder="Last name here" required>
+                        <input type="email" placeholder="Email here" required>
+                        <input type="tel" placeholder="Phone Number" required>
+
+                        <p id="phoneInput"><i>(Just so we can remind you of your appt)</i></p>
+
+                        <button type="submit">
+                            Step 2: Find a time that works 
+                            <img src="right-arrow.png" alt="Arrow" class="arrow-icon">
+                        </button>
+                        
+                    </form>
+                    <p class="questions">Questions? Give us a call: <a href="tel:4159850940">415-985-0940</a></p>
+
+                    <p class="job-link">Looking for a job? <a href="#">Click here</a></p>
+                </div>
+            </div>   
+            
+        </section>
+    </main>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".carousel img");
+        const thumbnails = document.querySelectorAll(".thumbnails img");
+
+        function changeSlide(index) {
+            slides[currentSlide].classList.remove("active");
+            thumbnails[currentSlide].classList.remove("active");
+            currentSlide = index;
+            slides[currentSlide].classList.add("active");
+            thumbnails[currentSlide].classList.add("active");
+        }
+
+        document.querySelector(".prev").addEventListener("click", () => {
+            changeSlide((currentSlide - 1 + slides.length) % slides.length);
+        });
+
+        document.querySelector(".next").addEventListener("click", () => {
+            changeSlide((currentSlide + 1) % slides.length);
+        });
+    </script>
+</body>
+</html>
